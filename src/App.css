@@ -36,3 +36,74 @@
     transform: rotate(360deg);
   }
 }
+
+#root > div > header > ol{
+  margin-left: 50%;
+  margin-right: 50%;
+  width: 80%;
+}
+
+#root > div > header > ol > li {
+  display: grid;
+  grid-template-columns: .5fr 1fr 1fr .2fr;
+  grid-template-areas: "left left right heart-collumn";
+  height: 25%;
+  padding: 50px;
+  border: 1px white solid;
+  margin-bottom: 15px;
+}
+
+#beer-img {
+  height: 250px;
+}
+
+#heart {
+  grid-area: heart-collumn;
+  margin: auto 5px auto auto;
+}
+
+#name {
+  grid-area: middle;
+  color:white;
+  text-align: left;
+  font-size: 22px;
+  padding: 15px;
+}
+
+#date-brewed {
+  grid-area: middle;
+  color: white;
+  font-size: 18px;
+  text-align: left;
+  padding: 15px;
+
+
+}
+
+#abv {
+  grid-area: middle;
+  color:white;
+  font-size: 18px;
+  text-align: left;
+  padding: 15px;
+
+
+}
+
+#tagline {
+  grid-area: middle;
+  color: white;
+  text-align: left;
+  padding: 15px;
+  font-size: 18px;
+  margin-bottom: auto;
+}
+
+#description {
+  grid-area: right;
+  color: white;
+  font-size: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
